@@ -15,7 +15,7 @@ public class NumOfWordsInString {
 			}
 		}
 
-		System.out.println(count);
+		System.out.println("No of Words in given string is : "+count);
 	}
 
 }
