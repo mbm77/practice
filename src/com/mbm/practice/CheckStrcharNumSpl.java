@@ -9,19 +9,13 @@ public class CheckStrcharNumSpl {
 		Scanner scanner = new Scanner(System.in);
 
 		String str = scanner.nextLine();
-		
 		System.out.println(str);
-		
+		if (str.matches("^[a-zA-Z0-9!#$%&(*+),-/@]*$")) {
+			System.out.println("valid password");
+		} else {
+			System.out.println("Invalid Password");
+		}
 
-			if(str.matches("^[a-zA-Z0-9!#$%&(*+),-/@]*$")) {
-				System.out.println(str);
-				System.out.println("valid password");
-				System.out.println(str);
-			}else {
-				System.out.println("Invalid Password");
-			}
-			
-		
 		scanner.close();
 	}
 
